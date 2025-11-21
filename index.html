@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let's Spell English - Learn & Spell Words!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🌟 Let's Spell English! 🌟</h1>
+            <p class="subtitle">Learn new words and practice spelling!</p>
+        </header>
+
+        <div class="main-content">
+            <!-- Word Display Section -->
+            <div class="word-section">
+                <div class="word-display" id="wordDisplay">
+                    <div class="word-image" id="wordImage">📚</div>
+                    <h2 class="word-text" id="wordText">Click "New Word" to start!</h2>
+                    <button class="btn btn-primary" id="newWordBtn">🎯 New Word</button>
+                    <button class="btn btn-secondary" id="hearWordBtn">🔊 Hear Word</button>
+                </div>
+            </div>
+
+            <!-- Spelling Practice Section -->
+            <div class="spelling-section">
+                <h3>Can you spell this word?</h3>
+                <div class="spelling-input-container">
+                    <input type="text" id="spellingInput" placeholder="Type the word here..." autocomplete="off" spellcheck="false">
+                    <button class="btn btn-check" id="checkBtn">✓ Check</button>
+                </div>
+                <div class="feedback" id="feedback"></div>
+                <div class="hint-section" id="hintSection" style="display: none;">
+                    <button class="btn btn-hint" id="hintBtn">💡 Need a hint?</button>
+                    <div class="hint-display" id="hintDisplay"></div>
+                </div>
+            </div>
+
+            <!-- Progress Section -->
+            <div class="progress-section">
+                <div class="score">
+                    <span>⭐ Score: <span id="score">0</span></span>
+                    <span>🎯 Correct: <span id="correct">0</span></span>
+                </div>
+                <button class="btn btn-reset" id="resetBtn">🔄 Reset Score</button>
+            </div>
+        </div>
+
+        <!-- Word List Section -->
+        <div class="word-list-section">
+            <h3>📖 Words You've Learned</h3>
+            <div class="word-list" id="wordList"></div>
+        </div>
+    </div>
+
+    <script src="words.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
+
